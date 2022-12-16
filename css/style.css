@@ -50,7 +50,7 @@
     flex-direction: column;
     flex-grow: 0;
 }
-.gallery { background: #eee}
+.gallery { background: #eee; }
 .gallery .list { 
     display: flex; 
     flex-wrap: wrap;
@@ -74,6 +74,4 @@
     background: rgb(254, 211, 157);
 }
 
-.footer {
-    background: #999;
-}
+.footer { background: #999; }
