@@ -1,0 +1,38 @@
+
+.body {
+    font-family: Roboto;
+    color: black;
+    background: white;
+}
+
+.container {
+    width: 1200px;
+    min-width: 600px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 52px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.list { text-decoration: none; }
+.text {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    padding: 16px 32px;
+}
+.image { width: 500px; }
+
+.gallery {}
+.gallery .list { display: flex; }
+.gallery .item { 
+
+}
+.gallery .card {
+
+}
