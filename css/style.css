@@ -57,17 +57,22 @@
     display: flex; 
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -20px;
-    margin-bottom: -40px;
+    row-gap: 40px;
+    column-gap: 20px;
 }
 .gallery .list .item { 
-    flex-basis: calc(100% / 3 - 20px);
-    margin-right: 20px;
-    margin-bottom: 40px;
+    width: calc((100% - 20 * 2) / 3);
 }
-
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
 .card {
     width: 350px;
+    text-align: center;
     /* border: none; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -76,6 +81,48 @@
 }
 .description {
     padding: 32px 16px;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* bottom: 0;
+    right: 0; */
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(70, 70, 70, 0.5);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 800px;
+    min-width: 1200px;
+
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pict-01 { background-image: url("../images/img-01.jpg"); }
+
+.btn-modal {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .footer { 
