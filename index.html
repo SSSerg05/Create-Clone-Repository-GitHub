@@ -22,11 +22,9 @@
                 <ul class="list">
                     <li class="item">
                         <div class="card">
-                            <button data-open-modal class="btn" type="button">Збільшити</button>
-                            <div class="image">
-                                <a href="./images/img-01.jpg"></a>
-                                    <img class="image" src="./images/img-01.jpg" alt="Open and select repository in GitHub Desktop">
-                                </a>
+                            <!-- <button data-open-modal class="btn center" type="button">Збільшити</button> -->
+                            <div data-open-modal class="img-01">
+                                <img class="image" src="./images/img-01.jpg" alt="Open and select repository in GitHub Desktop">
                             </div>
 
                             <div class="description">
@@ -41,17 +39,23 @@
                                 <button data-close-modal class="btn btn-modal" type="button">Закрити</button>
                             </div>
                         </div>
-                        
                     </li>
+
                     <li class="item">
                         <div class="card">
-                            <div class="image">
-                                <a href="./images/img-02.jpg"></a>
-                                    <img class="image" src="./images/img-02.jpg" alt="Select Settings">
-                                </a>
+                            
+                            <div data-open-modal class="img-02">
+                                <img class="image" src="./images/img-02.jpg" alt="Select Settings">
                             </div>
+
                             <div class="description">
                                 <p class="text">На сайті GitHub вибираємо пунк меню Settings</p>
+                            </div>
+                        </div>
+
+                        <div class="backdrop is-hidden" data-backdrop>
+                            <div class="modal pict-02">
+                                <button data-close-modal class="btn btn-modal" type="button">Закрити</button>
                             </div>
                         </div>
                     </li>
