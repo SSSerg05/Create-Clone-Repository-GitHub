@@ -17,31 +17,70 @@
 //     console.log('Це клік у бекдроп');
 // }
 
-const refs = {
-    openModalBtns: document.querySelectorAll('[data-open-modal]'),
-    closeModalBtns: document.querySelectorAll('[data-close-modal]'),
-    backdrop: document.querySelectorAll('[data-backdrop]'),
-};
-
-for(let item of refs.openModalBtns) {
-    item.addEventListener("click", toggleModal(item));
-    console.log(item);
-}
-console.log(refs.openModalBtns);
-
-
-for(let item of refs.closeModalBtns) {
-   item.addEventListener("click", toggleModal(item));
+//document.addEventListener('click', e => console.log(e.target))
+const picts = {
+    ref : document.querySelectorAll('.item')
 }
 
-for(let item of refs.backdrop) {
-    item.addEventListener("click", logBackdropClick);
-}
 
-function toggleModal(item) {
-    refs.backdrop[item].classList.toggle('is-hidden');
+for (let item of picts.ref) {
+    item.ref = {
+        openModalButton: item.querySelectorAll('[data-open-modal]'),
+        closeModalButton: item.querySelectorAll('[data-close-modal]'),
+        backdrop: item.querySelectorAll('[data-backdrop]'),
+    };
+    console.log(item);    
+    item.ref.openModalButton.addEventListener("click", toggleModal());
+    // item.ref.closeModalButton.addEventListener("click", toggleModal());
+    // item.ref.backdrop.addEventListener("click", logBackdropClick());
 }
+// console.log(picts);
 
-function logBackdropClick() {
+
+
+// const refs = {
+//     openModalButtons: document.querySelectorAll('[data-open-modal]'),
+//     closeModalButtons: document.querySelectorAll('[data-close-modal]'),
+//     backdrops: document.querySelectorAll('[data-backdrop]'),
+// };
+
+
+// for(let item of refs.openModalButtons) {
+//     let img = item.classList[1];
+//     console.log('Open:' + img);
+//     item.addEventListener("click", toggleModal());
+// }
+
+// for(let item of refs.closeModalButtons) {
+//     let img = item.classList[1];
+//     console.log('Close:' + img);
+//     item.addEventListener("click", toggleModal());
+// }
+
+// for (let item of refs.backdrops) {
+//     // console.log(item.classList);
+//     let img = item.classList[1];
+//     console.log('backdrops:' + img);
+//     item.addEventListener("click", logBackdropClick());
+// }
+// console.log(refs);
+
+// function toggleModal() {
+//     let item = document.querySelector('[data-backdrop]')
+//     item.classList.toggle('is-hidden');
+//     // console.log(refs.backdrops);
+//     // for (let item of refs.backdrops) { 
+//     //     // console.log(item);
+
+//     //     if (item.classList.value.includes(img)) { 
+//     //         // console.log('++');
+//     //         item.classList.toggle('is-hidden');
+//     //      }
+//     // }
+//     //refs.backdrops.img.classList.toggle('is-hidden');
+// }
+
+function logBackdropClick(item) {
+    // console.log(item);
     console.log('Це клік у бекдроп');
 }
