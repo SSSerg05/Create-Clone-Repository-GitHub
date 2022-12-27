@@ -19,13 +19,18 @@
             <div class="container">
                 <h1 class="title center">Створення нового репозиторію у GitHub<br>
                     на базі іншого та клонування його<br>на робочю станцію</h1>
+
+                <!-- Modal block -->
+                <div class="backdrop is-hidden" data-backdrop>
+                    <div data-close-modal data-img class="modal"></div>
+                </div>
+
                 <ul class="list">
 
                     <!-- img-01 -->
                     <li class="item">
                         <div class="card">
-                            <button data-open-modal class="btn img-01 center" type="button">Збільшити</button>
-                            <div class="">
+                            <div data-open-modal class="img-01">
                                 <img class="image" src="./images/img-01.jpg" alt="Open and select repository in GitHub Desktop">
                             </div>
 
@@ -35,19 +40,12 @@
                                     GitHub Desktop кращє закрити</p>
                             </div>
                         </div>
-
-                        <div class="backdrop img-01 is-hidden" data-backdrop>
-                            <div class="modal bg-img-01">
-                                <button data-close-modal class="btn img-01 btn-modal" type="button">Закрити</button>
-                            </div>
-                        </div>
                     </li>
 
                     <!-- img-02 -->
                     <li class="item">
                         <div class="card">
-                            <button data-open-modal class="btn img-02 center" type="button">Збільшити</button>
-                            <div class="">
+                            <div data-open-modal class="img-02">
                                 <img class="image" src="./images/img-02.jpg" alt="Select Settings">
                             </div>
 
@@ -55,39 +53,26 @@
                                 <p class="text">На сайті GitHub вибираємо пунк меню Settings</p>
                             </div>
                         </div>
-
-                        <div class="backdrop img-02 is-hidden" data-backdrop>
-                            <div class="modal bg-img-02">
-                                <button data-close-modal class="btn img-02 btn-modal" type="button">Закрити</button>
-                            </div>
-                        </div>
                     </li>
 
                     <!-- img-03 -->
                     <li class="item">
                         <div class="card">
-                            <button data-open-modal class="btn img-03 center " type="button">Збільшити</button>
-                            <div class="">
+                            <div data-open-modal class="img-03">
                                 <img class="image" src="./images/img-03.jpg" alt="General -> Select On Template repository">
                             </div>
+
                             <div class="description">
                                 <p class="text">Активуємо галочку у пункті General -> Template repository</p>
                             </div>
                         </div>
-
-                        <div class="backdrop img-03 is-hidden" data-backdrop>
-                            <div class="modal bg-img-03">
-                                <button data-close-modal class="btn img-03 btn-modal" type="button">Закрити</button>
-                            </div>
-                        </div>
                     </li>
 
-                    <!-- <li class="item">
+                    <!-- img-04 -->
+                    <li class="item">
                         <div class="card">
-                            <div class="image">
-                                <a href="./images/img-04.jpg">
+                            <div data-open-modal class="img-04">
                                     <img class="image" src="./images/img-04.jpg" alt="Create New repository">
-                                </a>
                             </div>
                             
                             <div class="description">
@@ -95,12 +80,12 @@
                             </div>
                         </div>
                     </li>
+
+                    <!-- img-05 -->
                     <li class="item">
                         <div class="card">
-                            <div class="image">
-                                <a href="./images/img-05.jpg">
-                                    <img class="image" src="./images/img-05.jpg" alt="Select template repository & write name for new repository">
-                                </a>
+                            <div data-open-modal class="img-05">
+                                <img class="image" src="./images/img-05.jpg" alt="Select template repository & write name for new repository">
                             </div>
 
                             <div class="description">
@@ -108,35 +93,36 @@
                                     Пишемо назву нашого нового репозиторію</p>
                             </div>
                         </div>
-                        
                     </li>
+
+                    <!-- img-06 -->
                     <li class="item">
                         <div class="card">
-                            <button class="btn" type="button">Збільшити</button>
-                            <div class="image">
-                                <a href="./images/img-06.jpg">
-                                    <img class="image" src="./images/img-06.jpg" alt="Clone Repository in GitHub Desktop">
-                                </a>
+                            <div data-open-modal class="img-06">
+                                <img class="image" src="./images/img-06.jpg" alt="Clone Repository in GitHub Desktop">
                             </div>
+
                             <div class="description">
                                 <p class="text">Відкриваємо GitHub Desktop.<br>File, Clone Repository</p>
                             </div>
                         </div>
                     </li>
+
+                    <!-- img-07 -->
                     <li class="item">
                         <div class="card">
-                            <div class="image">
-                                <a href="./images/img-07.jpg">
-                                    <img class="image" src="./images/img-07.jpg" alt="Job Done. Open in VSCode">
-                                </a>
+                            <div data-open-modal class="img-07">
+                                <img class="image" src="./images/img-07.jpg" alt="Job Done. Open in VSCode">
                             </div>
+
                             <div class="description">
                                 <p class="text">Все. Репозиторій створено та скопійовано на робочу станцію.<br>
                                     Тискнемо на клавішу Open in Visual Studio Code і працюємо з новим репозиторієм</p>
                             </div>        
                         </div>
-                    </li> -->
+                    </li>
                 </ul>
+                
             </div>
         </section>
     </main>

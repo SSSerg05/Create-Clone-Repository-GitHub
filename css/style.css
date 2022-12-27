@@ -124,11 +124,19 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: zoom-out;
+}
+.modal::after {
+    cursor: zoom-in;
 }
 
 .bg-img-01 { background-image: url("../images/img-01.jpg"); }
 .bg-img-02 { background-image: url("../images/img-02.jpg"); }
 .bg-img-03 { background-image: url("../images/img-03.jpg"); }
+.bg-img-04 { background-image: url("../images/img-04.jpg"); }
+.bg-img-05 { background-image: url("../images/img-05.jpg"); }
+.bg-img-06 { background-image: url("../images/img-06.jpg"); }
+.bg-img-07 { background-image: url("../images/img-07.jpg"); }
 
 .btn-modal {
     position: absolute;
